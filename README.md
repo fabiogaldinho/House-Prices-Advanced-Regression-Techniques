@@ -1,6 +1,6 @@
 # 🏠 **HOUSE PRICES - ADVANCED REGRESSION TECHNIQUES**
 
-This project was developed as part of the Kaggle competition "[House Prices - Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)". The goal was to predict house sale prices using a dataset with 79 explanatory variables describing nearly every aspect of residential homes in Ames, Iowa.
+This project was developed as part of the Kaggle competition [House Prices - Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques). The goal was to predict house sale prices using a dataset with 79 explanatory variables describing nearly every aspect of residential homes in Ames, Iowa.
 <br>
 <br>
 
