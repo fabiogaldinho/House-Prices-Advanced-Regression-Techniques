@@ -20,7 +20,6 @@ Build a robust regression model capable of accurately predicting house prices us
 - **Hyperparameter Tuning**: `Optuna`;
 - **Preprocessing**: `MaxAbsScaler`, `K-Fold Target Encoding`, `VIF`.
 <br>
-<br>
 
 ## 🧠 **PROJECT WORKFLOW**
 
@@ -41,7 +40,6 @@ Build a robust regression model capable of accurately predicting house prices us
 ### 4. Data Normalization
 - Used **MaxAbsScaler** to normalize the data and maintain sparsity of the features.
 <br>
-<br>
 
 ## 🤖 **MODELING**
 
@@ -58,18 +56,17 @@ All models underwent **hyperparameter tuning using Optuna**, a powerful optimiza
 - A **Stacking Ensemble** was built using the four models above, with **XGBoost Regressor as the meta-model**.
 - Achieved a final score of **RMSE = 0.10** on the test set.
 <br>
-<br>
 
 ## 📁 **PROJECT STRUCTURE**
 
-\`\`\`bash
+```bash
 ├── data/                   # Raw and processed data
 ├── notebooks/              # Jupyter Notebooks (EDA, modeling, etc.)
 ├── models/                 # Saved model files and evaluation results
 ├── visuals/                # Plots and visualizations
 ├── README.md               # Project documentation
 └── requirements.txt        # Required Python packages
-\`\`\`
+```
 <br>
 <br>
 
@@ -81,7 +78,6 @@ All models underwent **hyperparameter tuning using Optuna**, a powerful optimiza
   - Individualized outlier/missing data treatment;
   - Model stacking and hyperparameter tuning.
 <br>
-<br>
 
 ## 🧠 **WHAT I LEARNED**
 
@@ -90,14 +86,12 @@ All models underwent **hyperparameter tuning using Optuna**, a powerful optimiza
 - Combining multiple models through **stacking** for better performance.
 - Effectiveness of **Optuna** for hyperparameter optimization.
 <br>
-<br>
 
 ## 📌 **FUTURE IMPROVEMENTS**
 
 - Add cross-validation visual analysis for each model
 - Deploy the model using a simple API
 - Automate the preprocessing pipeline with custom transformers
-<br>
 <br>
 
 ## 🧑‍💻 **AUTHOR**
