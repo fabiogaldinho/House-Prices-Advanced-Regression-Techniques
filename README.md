@@ -68,7 +68,6 @@ All models underwent **hyperparameter tuning using Optuna**, a powerful optimiza
 └── requirements.txt        # Required Python packages
 ```
 <br>
-<br>
 
 ## 📈 **RESULTS**
 
