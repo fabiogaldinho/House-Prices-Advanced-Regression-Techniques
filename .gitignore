@@ -4,3 +4,5 @@
 catboost_info/
 anaconda_projects/
 notebooks/catboost_info/
+HousePrices.ipynb
+data_description.gsheet
