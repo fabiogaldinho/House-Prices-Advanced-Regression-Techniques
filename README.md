@@ -1,16 +1,16 @@
-# 🏠 **HOUSE PRICES - ADVANCED REGRESSION TECHNIQUES**
+# **HOUSE PRICES - ADVANCED REGRESSION TECHNIQUES**
 
 This project was developed as part of the Kaggle competition [House Prices - Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques). The goal was to predict house sale prices using a dataset with 79 explanatory variables describing nearly every aspect of residential homes in Ames, Iowa.
 <br>
 <br>
 
-## 📌 **PROJECT OBJECTIVE**
+## **PROJECT OBJECTIVE**
 
 Build a robust regression model capable of accurately predicting house prices using advanced data preprocessing, feature engineering, and ensemble modeling techniques.
 <br>
 <br>
 
-## 📊 **LANGUAGES AND TOOLS**
+## **LANGUAGES AND TOOLS**
 
 - **Programming Language**: Python;
 - **Data Manipulation**: `pandas`, `numpy`;
@@ -21,43 +21,48 @@ Build a robust regression model capable of accurately predicting house prices us
 - **Preprocessing**: `MaxAbsScaler`, `K-Fold Target Encoding`, `VIF`.
 <br>
 
-## 🧠 **PROJECT WORKFLOW**
+## **PROJECT WORKFLOW**
 
 ### 1. Missing Data Handling
-- Missing values were treated **case-by-case**, with contextual understanding of each feature.
+- Missing values were treated **case-by-case**, with contextual understanding of each feature;
 - No blind imputation or mass dropping of data to preserve useful information.
 
 ### 2. Outlier Analysis
-- Outliers were also evaluated **individually** to avoid discarding valuable data.
+- Outliers were also evaluated **individually** to avoid discarding valuable data;
 - Visual and statistical analysis were used to detect and decide on their treatment.
 
 ### 3. Exploratory Data Analysis (EDA)
-- Target variable distribution analysis and normalization.
-- **K-Fold Target Encoding** for categorical features, followed by correlation analysis with the target.
-- Feature importance and redundancy evaluation using **correlation matrix** and **Variance Inflation Factor (VIF)**.
+- Target variable distribution analysis and normalization;
+- **K-Fold Target Encoding** for categorical features, followed by correlation analysis with the target;
+- Feature importance and redundancy evaluation using **correlation matrix** and **Variance Inflation Factor (VIF)**;
 - **Feature Engineering** to uncover new patterns and relationships between features and the target.
 
 ### 4. Data Normalization
 - Used **MaxAbsScaler** to normalize the data and maintain sparsity of the features.
+
+### 5. Modeling and Optimization
+- Trained four regression models: **LightGBM**, **XGBoost**, **CatBoost**, and **GradientBoosting**;
+- Used **Optuna** for hyperparameter tuning to optimize model performance;
+- Developed a final stacking ensemble, using **XGBoost Regressor as meta-model**, achieving an **RMSE of 0.10**.
 <br>
 
-## 🤖 **MODELING**
+## **MODELING**
 
 Four base models were trained and tuned:
 
-- **LightGBM Regressor**
-- **XGBoost Regressor**
-- **CatBoost Regressor**
-- **GradientBoosting Regressor**
+- **LightGBM Regressor**;
+- **XGBoost Regressor**;
+- **CatBoost Regressor**;
+- **GradientBoosting Regressor**.
 
 All models underwent **hyperparameter tuning using Optuna**, a powerful optimization framework.
 
-### 📚 Final Model - Stacking Regressor
-- A **Stacking Ensemble** was built using the four models above, with **XGBoost Regressor as the meta-model**.
+### Final Model - Stacking Regressor
+- A **Stacking Ensemble** was built using the four models above, with **XGBoost Regressor as the meta-model**;
 - Achieved a final score of **RMSE = 0.10** on the test set.
 <br>
 
-## 📁 **PROJECT STRUCTURE**
+## **PROJECT STRUCTURE**
 
 ```bash
 ├── data/                   # Raw and processed data
@@ -69,7 +74,7 @@ All models underwent **hyperparameter tuning using Optuna**, a powerful optimiza
 ```
 <br>
 
-## 📈 **RESULTS**
+## **RESULTS**
 
 - Final RMSE: **0.10**;
 - Strong performance thanks to:
@@ -78,21 +83,21 @@ All models underwent **hyperparameter tuning using Optuna**, a powerful optimiza
   - Model stacking and hyperparameter tuning.
 <br>
 
-## 🧠 **WHAT I LEARNED**
+## **WHAT I LEARNED**
 
-- Importance of **understanding data context** before applying preprocessing steps.
-- **Advanced encoding** techniques like K-Fold Target Encoding.
-- Combining multiple models through **stacking** for better performance.
+- Importance of **understanding data context** before applying preprocessing steps;
+- **Advanced encoding** techniques like K-Fold Target Encoding;
+- Combining multiple models through **stacking** for better performance;
 - Effectiveness of **Optuna** for hyperparameter optimization.
 <br>
 
-## 📌 **FUTURE IMPROVEMENTS**
+## **FUTURE IMPROVEMENTS**
 
-- Add cross-validation visual analysis for each model
-- Deploy the model using a simple API
-- Automate the preprocessing pipeline with custom transformers
+- Add cross-validation visual analysis for each model;
+- Deploy the model using a simple API;
+- Automate the preprocessing pipeline with custom transformers.
 <br>
 
-## 🧑‍💻 **AUTHOR**
+## **AUTHOR**
 
 **Fábio Galdino**
